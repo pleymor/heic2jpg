@@ -1,0 +1,30 @@
+{
+  "name": "heic2jpg",
+  "version": "1.0.1",
+  "description": "Converts HEIC files to jpg",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "keywords": [
+    "HEIC",
+    "convert",
+    "jpg"
+  ],
+  "author": "Adrien LAUGUEUX",
+  "license": "ISC",
+  "bin": {
+    "heic2jpg": "src/index.js"
+  },
+  "dependencies": {
+    "heic-convert": "^1.2.2",
+    "util": "^0.12.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pleymor/heic2jpg.git"
+  }
+}
